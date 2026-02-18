@@ -1156,9 +1156,13 @@ footer {
   margin-bottom: 50px;
 }
 
-.footer-brand img 
-  height: 55px;
+.footer-brand img {
+  height: 80px !important;
+  width: auto !important;
+  max-width: 220px !important;
   margin-bottom: 20px;
+}
+
 
 }
 
