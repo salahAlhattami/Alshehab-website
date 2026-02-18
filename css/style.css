@@ -189,17 +189,22 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   z-index: 1000;
   padding: 20px 0;
   transition: var(--transition);
+  background: #FFFFFF;          /* خلفية بيضاء دائماً */
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
 }
 
+/* لم نعد نحتاج شفافية */
 .navbar.transparent {
-  background: transparent;
+  background: #FFFFFF;
 }
 
+/* عند السكروول فقط نقلل الـ padding ونزيد الشادو قليلاً */
 .navbar.scrolled {
-  background: var(--dark);
+  background: #FFFFFF;
   padding: 12px 0;
-  box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 25px rgba(0,0,0,0.12);
 }
+
 
 .nav-inner {
   display: flex;
