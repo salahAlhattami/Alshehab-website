@@ -1156,8 +1156,9 @@ footer {
   margin-bottom: 50px;
 }
 
-.footer-brand img {
-  height: 55px;
+.footer-brand img 
+  height: 90px;       /* غيّر هذا الرقم حسب ذوقك */
+  width: auto;
   margin-bottom: 20px;
 }
 
