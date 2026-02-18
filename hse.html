@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سياسة الجودة والسلامة والبيئة HSE في شركة الشهاب العالمية للمقاولات — التزام راسخ بأعلى معايير السلامة المهنية والاستدامة.">
+  <title>الجودة والسلامة والاستدامة | الشهاب العالمية للمقاولات</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .sustainability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .sustainability-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      border: 1px solid var(--gray-border);
+      display: flex;
+      gap: 20px;
+      transition: var(--transition);
+    }
+    .sustainability-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--green);
+    }
+    .sustainability-icon {
+      font-size: 2.2rem;
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      background: rgba(46,125,50,0.1);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sustainability-card h3 {
+      color: var(--dark);
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+    .sustainability-card p {
+      color: var(--gray);
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    .hse-commitment {
+      background: var(--dark);
+      color: white;
+      padding: 80px 0;
+    }
+    .commitment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+    .commitment-item {
+      text-align: center;
+      padding: 30px 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      transition: var(--transition);
+    }
+    .commitment-item:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: var(--primary);
+    }
+    .commitment-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .commitment-label {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+    }
+    @media(max-width:768px) {
+      .sustainability-grid { grid-template-columns: 1fr; }
+      .commitment-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="الشهاب العالمية للمقاولات"></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="about.html" class="nav-link">من نحن</a></li>
+          <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+          <li><a href="projects.html" class="nav-link">مشاريعنا</a></li>
+          <li><a href="hse.html" class="nav-link active">الجودة والسلامة</a></li>
+          <li><a href="vision2030.html" class="nav-link">رؤية 2030</a></li>
+          <li><a href="news.html" class="nav-link">الأخبار</a></li>
+          <li><a href="careers.html" class="nav-link">التوظيف</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav-cta">تواصل معنا</a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+    <a href="about.html" class="mobile-nav-link">من نحن</a>
+    <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+    <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+    <a href="hse.html" class="mobile-nav-link">الجودة والسلامة</a>
+    <a href="vision2030.html" class="mobile-nav-link">رؤية 2030</a>
+    <a href="careers.html" class="mobile-nav-link">التوظيف</a>
+    <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+    <br>
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">اطلب عرض سعر</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">الرئيسية</a><span>/</span><span>الجودة والسلامة والاستدامة</span>
+      </div>
+      <h1>السلامة في كل موقع، كل يوم</h1>
+      <p>التزامنا بمعايير الجودة والسلامة والبيئة HSE ليس خياراً — إنه مبدأ راسخ لا تنازل عنه</p>
+    </div>
+  </section>
+
+  <!-- HSE STATS BAR -->
+  <div class="hse-stats-bar">
+    <div class="container">
+      <div class="hse-stats-grid">
+        <div class="hse-stat">
+          <span class="number"><span data-count="100" data-suffix="%">0%</span></span>
+          <div class="label">التزام بمعايير HSE</div>
+        </div>
+        <div class="hse-stat">
+          <span class="number"><span data-count="0">0</span></span>
+          <div class="label">حوادث قاتلة في مشاريعنا</div>
+        </div>
+        <div class="hse-stat">
+          <span class="number"><span data-count="12" data-suffix="+">0+</span></span>
+          <div class="label">سنوات تطبيق معايير السلامة</div>
+        </div>
+        <div class="hse-stat">
+          <span class="number"><span data-count="100" data-suffix="%">0%</span></span>
+          <div class="label">من الفريق مدرَّب على HSE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HSE STATEMENT -->
+  <section style="background:var(--white);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content fade-in">
+          <span class="tag">التزامنا — Our Commitment</span>
+          <h2>لا يوجد مشروع يستحق التنفيذ على حساب سلامة الإنسان</h2>
+          <p>
+            في شركة الشهاب العالمية للمقاولات، تُعدّ السلامة المهنية والصحة والبيئة ركيزةً أساسية
+            لا تُفاوَض عليها في أي مشروع نتولى تنفيذه، بصرف النظر عن حجمه أو مدته أو طبيعته.
+          </p>
+          <p>
+            نُطبّق أُطر عمل HSE الشاملة في جميع مراحل المشاريع: من مرحلة التخطيط والتصميم،
+            مروراً بالتنفيذ الميداني، وصولاً إلى مرحلة التسليم والمتابعة. كل موقع، كل عامل، كل قرار.
+          </p>
+          <p>
+            فريقنا يخضع لبرامج تدريب دورية ومستمرة على معايير السلامة الدولية، ونُجري تقييمات
+            منتظمة للمخاطر لضمان بيئة عمل آمنة وصحية لجميع الأطراف.
+          </p>
+        </div>
+        <div class="fade-in fade-in-delay-1" style="display:flex;align-items:center;justify-content:center;">
+          <div style="width:100%;max-width:400px;background:linear-gradient(135deg,var(--dark),var(--dark-2));border-radius:var(--radius-lg);padding:50px;text-align:center;">
+            <div style="font-size:5rem;margin-bottom:20px;">🛡️</div>
+            <h3 style="color:white;font-size:1.4rem;margin-bottom:15px;">سياسة HSE</h3>
+            <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.8;">
+              "نلتزم بتوفير بيئة عمل آمنة وصحية وصديقة للبيئة في جميع مواقع مشاريعنا، وذلك من خلال التدريب المستمر وتطبيق أعلى معايير السلامة الدولية."
+            </p>
+            <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);color:var(--primary);font-weight:700;">الإدارة العليا — الشهاب العالمية</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HSE PILLARS -->
+  <section style="background:var(--gray-light);">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>أعمدة منظومة HSE لدينا</h2>
+        <p>أربعة محاور رئيسية تُشكّل إطار عملنا في السلامة والصحة والبيئة</p>
+      </div>
+      <div class="hse-pillars-grid">
+        <div class="hse-pillar fade-in">
+          <div class="hse-pillar-icon">🦺</div>
+          <div class="hse-pillar-content">
+            <h3>السلامة — Safety</h3>
+            <p>
+              نُطبّق بروتوكولات سلامة صارمة لحماية فريق المشروع والعملاء والعمال وجميع الأطراف
+              في مواقع المشاريع. تشمل هذه البروتوكولات: معدات الوقاية الشخصية، إجراءات الطوارئ،
+              تحليل المخاطر اليومي (JSA)، وتصاريح العمل للمهام عالية الخطورة.
+            </p>
+          </div>
+        </div>
+        <div class="hse-pillar fade-in fade-in-delay-1">
+          <div class="hse-pillar-icon">🏥</div>
+          <div class="hse-pillar-content">
+            <h3>الصحة المهنية — Occupational Health</h3>
+            <p>
+              برنامج شامل للصحة المهنية يتضمن الفحوصات الدورية للعمال، برامج التوعية بالمخاطر
+              الصحية في مواقع البناء، التدريب على الإسعافات الأولية، وإجراءات التعامل مع
+              الإصابات وحالات الطوارئ الصحية.
+            </p>
+          </div>
+        </div>
+        <div class="hse-pillar fade-in">
+          <div class="hse-pillar-icon">🌱</div>
+          <div class="hse-pillar-content">
+            <h3>البيئة — Environment</h3>
+            <p>
+              الالتزام بتقليل الأثر البيئي من خلال تنفيذ أعمال إنشائية صديقة للبيئة، إدارة
+              مخلفات البناء وإعادة تدويرها، استخدام مواد وتقنيات موفِّرة للطاقة، والحرص على
+              عدم تلويث التربة والمياه الجوفية في مواقع المشاريع.
+            </p>
+          </div>
+        </div>
+        <div class="hse-pillar fade-in fade-in-delay-1">
+          <div class="hse-pillar-icon">⚠️</div>
+          <div class="hse-pillar-content">
+            <h3>إدارة المخاطر — Risk Management</h3>
+            <p>
+              منهجية استباقية لتوقع وتحديد المخاطر وإدارتها قبل وقوعها. نُجري تقييمات شاملة
+              للمخاطر في بداية كل مشروع وعلى مدار مراحل التنفيذ، مع وضع خطط تخفيف واضحة
+              ومراجعتها بانتظام لضمان سلامة الجميع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section style="background:var(--white);">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>الاستدامة البيئية — Environmental Sustainability</h2>
+        <p>ممارسات مستدامة تحافظ على البيئة وتدعم أهداف رؤية 2030</p>
+      </div>
+      <div class="sustainability-grid">
+        <div class="sustainability-card fade-in">
+          <div class="sustainability-icon">♻️</div>
+          <div>
+            <h3>إدارة مخلفات البناء</h3>
+            <p>نُطبّق أنظمة متكاملة لفرز وإدارة مخلفات البناء وإعادة تدويرها، مما يُقلّل الأثر البيئي لمشاريعنا ويدعم الاقتصاد الدائري.</p>
+          </div>
+        </div>
+        <div class="sustainability-card fade-in fade-in-delay-1">
+          <div class="sustainability-icon">☀️</div>
+          <div>
+            <h3>حلول الطاقة المتجددة</h3>
+            <p>ندمج أنظمة الطاقة الشمسية وحلول الطاقة الموفّرة في مشاريعنا الإنشائية، مساهمةً في تحقيق أهداف تنويع مصادر الطاقة.</p>
+          </div>
+        </div>
+        <div class="sustainability-card fade-in">
+          <div class="sustainability-icon">💧</div>
+          <div>
+            <h3>ترشيد استهلاك المياه</h3>
+            <p>نعتمد تقنيات موفِّرة للمياه في مواقع العمل وفي المشاريع التي ننفّذها، حرصاً على الموارد المائية الثمينة في المملكة.</p>
+          </div>
+        </div>
+        <div class="sustainability-card fade-in fade-in-delay-1">
+          <div class="sustainability-icon">🏗️</div>
+          <div>
+            <h3>مواد البناء المستدامة</h3>
+            <p>نُعطي الأولوية لمواد البناء الصديقة للبيئة والمُصنَّعة محلياً، مما يُقلّل البصمة الكربونية ويدعم الصناعة الوطنية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMITMENT NUMBERS -->
+  <section class="hse-commitment">
+    <div class="container">
+      <div class="section-title light fade-in">
+        <h2>أرقام تعكس التزامنا</h2>
+        <p>نتائج حقيقية تُثبت جدية تطبيقنا لمعايير HSE</p>
+      </div>
+      <div class="commitment-grid">
+        <div class="commitment-item fade-in">
+          <div class="commitment-number"><span data-count="100" data-suffix="%">0%</span></div>
+          <div class="commitment-label">من مشاريعنا تُنفَّذ بخطة HSE مكتوبة ومعتمدة</div>
+        </div>
+        <div class="commitment-item fade-in fade-in-delay-1">
+          <div class="commitment-number"><span data-count="0">0</span></div>
+          <div class="commitment-label">حوادث قاتلة في تاريخ الشركة منذ 2012</div>
+        </div>
+        <div class="commitment-item fade-in fade-in-delay-2">
+          <div class="commitment-number"><span data-count="100" data-suffix="%">0%</span></div>
+          <div class="commitment-label">من الفريق يخضع لتدريب سلامة دوري</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>سلامتك معيارنا الأول في كل مشروع</h2>
+          <p>اعرف المزيد عن كيفية تطبيقنا لمعايير HSE في مشروعك القادم</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">تحدّث إلى فريقنا</a>
+          <a href="projects.html" class="btn btn-outline btn-lg">استعرض مشاريعنا</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="الشهاب">
+          <p>شركة الشهاب العالمية للمقاولات — شريكك الموثوق في مشاريع البنية التحتية والإنشاءات منذ 2012.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">fb</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">روابط سريعة</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">من نحن</a>
+            <a href="services.html" class="footer-link">خدماتنا</a>
+            <a href="projects.html" class="footer-link">مشاريعنا</a>
+            <a href="hse.html" class="footer-link">الجودة والسلامة</a>
+            <a href="careers.html" class="footer-link">التوظيف</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">خدماتنا</h4>
+          <div class="footer-links">
+            <a href="services.html#infrastructure" class="footer-link">البنية التحتية</a>
+            <a href="services.html#water" class="footer-link">المياه والصرف الصحي</a>
+            <a href="services.html#solar" class="footer-link">الطاقة الشمسية</a>
+            <a href="services.html#electrical" class="footer-link">الكهرباء والاتصالات</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">تواصل معنا</h4>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>الرياض، المملكة العربية السعودية</span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><span><a href="tel:+966502170383" style="color:rgba(255,255,255,0.7)">+966 502170383</a></span></div>
+          <div class="footer-contact-item"><span class="icon">📧</span><span><a href="mailto:info@alshihabicc.com" style="color:rgba(255,255,255,0.7)">info@alshihabicc.com</a></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+        <span>© 2025 الشهاب العالمية للمقاولات. جميع الحقوق محفوظة.</span>
+        <span>ALSHEHAB INTERNATIONAL CONTRACTING</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
