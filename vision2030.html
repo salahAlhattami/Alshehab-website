@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مساهمة شركة الشهاب العالمية للمقاولات في دعم رؤية المملكة العربية السعودية 2030 من خلال مشاريع البنية التحتية والطاقة المتجددة والاستدامة.">
+  <title>رؤية 2030 والابتكار | الشهاب العالمية للمقاولات</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .vision-hero-special {
+      background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 60%, #1a0800 100%);
+      padding: 150px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .vision-hero-special::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(232,90,27,0.08) 0%, transparent 70%);
+    }
+    .vision-hero-special .page-hero-content { position: relative; z-index: 1; }
+    .vision-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(232,90,27,0.15);
+      border: 1px solid rgba(232,90,27,0.3);
+      color: var(--primary-light);
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    .vision-axes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .vision-axis-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 40px 30px;
+      text-align: center;
+      border: 2px solid var(--gray-border);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .vision-axis-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      background: var(--primary);
+    }
+    .vision-axis-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--primary);
+    }
+    .vision-axis-icon { font-size: 3rem; margin-bottom: 20px; display: block; }
+    .vision-axis-card h3 { color: var(--dark); margin-bottom: 15px; font-size: 1.15rem; }
+    .vision-axis-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.8; }
+    .innovation-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .innovation-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      border: 1px solid var(--gray-border);
+      display: flex;
+      gap: 20px;
+      transition: var(--transition);
+    }
+    .innovation-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--primary);
+    }
+    .innovation-icon {
+      font-size: 2rem;
+      width: 60px;
+      height: 60px;
+      background: rgba(232,90,27,0.1);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .innovation-card h3 { color: var(--dark); margin-bottom: 8px; font-size: 1.05rem; }
+    .innovation-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.8; }
+    .vision-pledge {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .vision-pledge h2 { color: white; margin-bottom: 20px; font-size: 2rem; }
+    .vision-pledge p { color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 35px; font-size: 1.1rem; line-height: 1.9; }
+    @media(max-width:768px) {
+      .vision-axes { grid-template-columns: 1fr; }
+      .innovation-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="الشهاب العالمية للمقاولات"></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="about.html" class="nav-link">من نحن</a></li>
+          <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+          <li><a href="projects.html" class="nav-link">مشاريعنا</a></li>
+          <li><a href="hse.html" class="nav-link">الجودة والسلامة</a></li>
+          <li><a href="vision2030.html" class="nav-link active">رؤية 2030</a></li>
+          <li><a href="news.html" class="nav-link">الأخبار</a></li>
+          <li><a href="careers.html" class="nav-link">التوظيف</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav-cta">تواصل معنا</a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+    <a href="about.html" class="mobile-nav-link">من نحن</a>
+    <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+    <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+    <a href="hse.html" class="mobile-nav-link">الجودة والسلامة</a>
+    <a href="vision2030.html" class="mobile-nav-link">رؤية 2030</a>
+    <a href="careers.html" class="mobile-nav-link">التوظيف</a>
+    <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+    <br>
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">اطلب عرض سعر</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="vision-hero-special">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">الرئيسية</a><span>/</span><span>رؤية 2030 والابتكار</span>
+      </div>
+      <div class="vision-badge">🇸🇦 &nbsp; رؤية المملكة العربية السعودية 2030</div>
+      <h1 style="color:white;">نبني المملكة — شركاء رؤية 2030</h1>
+      <p style="color:rgba(255,255,255,0.75);max-width:600px;margin:15px auto 0;font-size:1.1rem;">
+        رؤية 2030 ليست مجرد وثيقة استراتيجية بالنسبة لنا — إنها البوصلة التي توجّه
+        كل قرار وكل مشروع ننفّذه من أجل مستقبل أفضل للمملكة
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO STATEMENT -->
+  <section style="background:var(--white);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content fade-in">
+          <span class="tag">التزامنا الوطني — Our National Commitment</span>
+          <h2>دورنا في التحوّل الوطني الكبير</h2>
+          <p>
+            منذ إطلاق رؤية المملكة العربية السعودية 2030، آمنت شركة الشهاب العالمية للمقاولات
+            بأن قطاع الإنشاءات والبنية التحتية يُمثّل العمود الفقري لتحقيق هذه الرؤية الطموحة.
+          </p>
+          <p>
+            كل طريق ننفّذه، كل شبكة مياه نبنيها، كل لوح شمسي نُركّبه — هو لبنة حقيقية في صرح
+            مملكة المستقبل. نحن لا ننفّذ مشاريع فحسب، بل نُسهم في تشكيل وجه المملكة
+            للأجيال القادمة.
+          </p>
+          <p>
+            من تطوير البنية التحتية إلى حلول الطاقة المتجددة، ومن مشاريع المياه
+            إلى شبكات الاتصالات — كل ما تقوم به الشهاب يتوافق مع محاور رؤية 2030 الثلاثة:
+            مجتمع حيوي، اقتصاد مزدهر، وطن طموح.
+          </p>
+        </div>
+        <div class="fade-in fade-in-delay-1" style="display:flex;align-items:center;justify-content:center;">
+          <div style="width:100%;max-width:400px;text-align:center;">
+            <div style="font-size:7rem;margin-bottom:20px;">🇸🇦</div>
+            <div style="background:var(--gray-light);border-radius:var(--radius-lg);padding:30px;">
+              <div style="font-size:0.85rem;color:var(--gray);margin-bottom:15px;font-family:var(--font-en);letter-spacing:1px;">KINGDOM OF SAUDI ARABIA</div>
+              <h3 style="font-size:1.8rem;color:var(--dark);margin-bottom:5px;">رؤية 2030</h3>
+              <div style="width:50px;height:3px;background:var(--primary);margin:0 auto 15px;border-radius:2px;"></div>
+              <p style="color:var(--gray);font-size:0.9rem;">الشهاب — شريك استراتيجي في تنفيذ مشاريع البنية التحتية الداعمة لرؤية المملكة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION AXES -->
+  <section style="background:var(--gray-light);">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>محاور مساهمتنا في رؤية 2030</h2>
+        <p>ثلاثة محاور رئيسية تربط عملنا بأهداف التحوّل الوطني</p>
+      </div>
+      <div class="vision-axes">
+        <div class="vision-axis-card fade-in">
+          <span class="vision-axis-icon">📈</span>
+          <h3>دعم النمو الاقتصادي</h3>
+          <p>
+            نُسهم في التنوع الاقتصادي بتطوير البنية التحتية الداعمة للقطاعات الإنتاجية والصناعية
+            والتجارية. كل مشروع ننفّذه يُضيف قيمة حقيقية للاقتصاد الوطني ويُوظّف كفاءات
+            سعودية متخصصة.
+          </p>
+        </div>
+        <div class="vision-axis-card fade-in fade-in-delay-1">
+          <span class="vision-axis-icon">🌿</span>
+          <h3>الاستدامة والبيئة</h3>
+          <p>
+            ننفّذ مشاريع تحقق التنمية الحضرية المستدامة، وندمج حلول الطاقة المتجددة في مشاريعنا
+            دعماً لأهداف تخفيض الكربون. نستخدم مواد صديقة للبيئة ونُدير المخلفات الإنشائية
+            بمسؤولية كاملة.
+          </p>
+        </div>
+        <div class="vision-axis-card fade-in fade-in-delay-2">
+          <span class="vision-axis-icon">💡</span>
+          <h3>الابتكار والتقنية</h3>
+          <p>
+            نعتمد أحدث تقنيات إدارة المشاريع والحلول الذكية لرفع الكفاءة وتحسين جودة التنفيذ.
+            نستثمر في التدريب والتطوير التقني لفريقنا لمواكبة أحدث الممارسات العالمية
+            في قطاع الإنشاءات.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INNOVATION -->
+  <section style="background:var(--white);">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>الابتكار في صميم عملنا — Innovation at Our Core</h2>
+        <p>نُوظّف التقنية الحديثة لتقديم نتائج أفضل وأكثر استدامة</p>
+      </div>
+      <div class="innovation-grid">
+        <div class="innovation-card fade-in">
+          <div class="innovation-icon">🖥️</div>
+          <div>
+            <h3>تقنيات إدارة المشاريع المتقدمة</h3>
+            <p>نستخدم أحدث برامج إدارة المشاريع لضمان الرقابة الكاملة على الجدول الزمني والتكاليف والجودة في وقت حقيقي.</p>
+          </div>
+        </div>
+        <div class="innovation-card fade-in fade-in-delay-1">
+          <div class="innovation-icon">📡</div>
+          <div>
+            <h3>الرصد الميداني بالتقنيات الذكية</h3>
+            <p>نعتمد تقنيات المراقبة الذكية والاستشعار عن بُعد لمتابعة مواقع المشاريع وضمان الجودة والسلامة.</p>
+          </div>
+        </div>
+        <div class="innovation-card fade-in">
+          <div class="innovation-icon">🌱</div>
+          <div>
+            <h3>الإنشاءات الخضراء</h3>
+            <p>ندمج مبادئ البناء الأخضر في مشاريعنا عبر استخدام مواد صديقة للبيئة وأنظمة موفِّرة للطاقة والمياه.</p>
+          </div>
+        </div>
+        <div class="innovation-card fade-in fade-in-delay-1">
+          <div class="innovation-icon">⚡</div>
+          <div>
+            <h3>حلول الطاقة الذكية</h3>
+            <p>نُقدّم حلولاً متكاملة للطاقة الشمسية وأنظمة إدارة الطاقة الذكية التي تُقلّل التكاليف وتدعم الاستدامة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION PLEDGE -->
+  <section class="vision-pledge">
+    <div class="container">
+      <h2>تعهّدنا لبناء مملكة المستقبل</h2>
+      <p>
+        نتعهّد بمواصلة مساهمتنا الفاعلة في تحقيق أهداف رؤية 2030، من خلال تنفيذ مشاريع
+        بنية تحتية عالية الجودة، والاستثمار في الكفاءات الوطنية، وتبنّي حلول الطاقة المتجددة
+        والاستدامة البيئية في كل ما نبنيه اليوم من أجل غدٍ أفضل.
+      </p>
+      <a href="contact.html" class="btn btn-outline btn-lg">ابدأ مشروعك معنا اليوم ←</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="الشهاب">
+          <p>شركة الشهاب العالمية للمقاولات — شريكك الموثوق في مشاريع البنية التحتية والإنشاءات منذ 2012.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">fb</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">روابط سريعة</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">من نحن</a>
+            <a href="services.html" class="footer-link">خدماتنا</a>
+            <a href="projects.html" class="footer-link">مشاريعنا</a>
+            <a href="hse.html" class="footer-link">الجودة والسلامة</a>
+            <a href="careers.html" class="footer-link">التوظيف</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">خدماتنا</h4>
+          <div class="footer-links">
+            <a href="services.html#infrastructure" class="footer-link">البنية التحتية</a>
+            <a href="services.html#water" class="footer-link">المياه والصرف الصحي</a>
+            <a href="services.html#solar" class="footer-link">الطاقة الشمسية</a>
+            <a href="services.html#electrical" class="footer-link">الكهرباء والاتصالات</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">تواصل معنا</h4>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>الرياض، المملكة العربية السعودية</span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><span><a href="tel:+966502170383" style="color:rgba(255,255,255,0.7)">+966 502170383</a></span></div>
+          <div class="footer-contact-item"><span class="icon">📧</span><span><a href="mailto:info@alshihabicc.com" style="color:rgba(255,255,255,0.7)">info@alshihabicc.com</a></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+        <span>© 2025 الشهاب العالمية للمقاولات. جميع الحقوق محفوظة.</span>
+        <span>ALSHEHAB INTERNATIONAL CONTRACTING</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
