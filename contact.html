@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تواصل مع شركة الشهاب العالمية للمقاولات — الرياض، المملكة العربية السعودية. اطلب عرض سعر أو استشارة مجانية.">
+  <title>تواصل معنا | الشهاب العالمية للمقاولات</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 60px;
+      border: 1px solid var(--gray-border);
+      background: var(--gray-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .map-placeholder-icon { font-size: 4rem; }
+    .map-placeholder-text { color: var(--gray); font-size: 1rem; }
+    .map-placeholder-link {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: underline;
+    }
+    .contact-ways {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+    .contact-way {
+      text-align: center;
+      padding: 35px 25px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--gray-border);
+      transition: var(--transition);
+    }
+    .contact-way:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+    .contact-way-icon {
+      width: 65px;
+      height: 65px;
+      background: rgba(232,90,27,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      margin: 0 auto 18px;
+      transition: var(--transition);
+    }
+    .contact-way:hover .contact-way-icon {
+      background: var(--primary);
+    }
+    .contact-way h3 {
+      color: var(--dark);
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    .contact-way a, .contact-way p {
+      color: var(--primary);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .contact-way p { color: var(--gray); font-weight: 400; }
+    @media(max-width:768px){
+      .contact-ways { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="الشهاب العالمية للمقاولات"></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="about.html" class="nav-link">من نحن</a></li>
+          <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+          <li><a href="projects.html" class="nav-link">مشاريعنا</a></li>
+          <li><a href="hse.html" class="nav-link">الجودة والسلامة</a></li>
+          <li><a href="vision2030.html" class="nav-link">رؤية 2030</a></li>
+          <li><a href="news.html" class="nav-link">الأخبار</a></li>
+          <li><a href="careers.html" class="nav-link">التوظيف</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav-cta active">تواصل معنا</a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+    <a href="about.html" class="mobile-nav-link">من نحن</a>
+    <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+    <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+    <a href="hse.html" class="mobile-nav-link">الجودة والسلامة</a>
+    <a href="vision2030.html" class="mobile-nav-link">رؤية 2030</a>
+    <a href="news.html" class="mobile-nav-link">الأخبار</a>
+    <a href="careers.html" class="mobile-nav-link">التوظيف</a>
+    <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">الرئيسية</a><span>/</span><span>تواصل معنا</span>
+      </div>
+      <h1>نحن هنا للمساعدة</h1>
+      <p>فريقنا جاهز للإجابة على استفساراتك وتقديم أفضل الحلول لمشروعك</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <!-- CONTACT WAYS -->
+      <div class="contact-ways">
+        <div class="contact-way fade-in">
+          <div class="contact-way-icon">📞</div>
+          <h3>اتصل بنا مباشرة</h3>
+          <a href="tel:+966502170383">+966 502170383</a>
+          <p style="margin-top:5px;font-size:0.82rem;">الأحد – الخميس | 8ص – 5م</p>
+        </div>
+        <div class="contact-way fade-in fade-in-delay-1">
+          <div class="contact-way-icon">📧</div>
+          <h3>راسلنا بالبريد الإلكتروني</h3>
+          <a href="mailto:info@alshihabicc.com">info@alshihabicc.com</a>
+          <p style="margin-top:5px;font-size:0.82rem;">نرد خلال 24 ساعة عمل</p>
+        </div>
+        <div class="contact-way fade-in fade-in-delay-2">
+          <div class="contact-way-icon">📍</div>
+          <h3>زورنا في مقرّنا</h3>
+          <p>الرياض، المملكة العربية السعودية</p>
+          <a href="https://maps.google.com" target="_blank" style="font-size:0.85rem;margin-top:5px;display:block;">افتح في خرائط Google ←</a>
+        </div>
+      </div>
+
+      <!-- CONTACT GRID: INFO + FORM -->
+      <div class="contact-grid">
+
+        <!-- LEFT: CONTACT INFO -->
+        <div class="fade-in">
+          <div class="contact-info" style="padding:0;">
+            <span style="color:var(--primary);font-size:0.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:15px;">معلومات التواصل</span>
+            <h2 style="color:var(--dark);margin-bottom:20px;font-size:1.8rem;">دعنا نسمع عن مشروعك</h2>
+            <p style="color:var(--gray);margin-bottom:35px;font-size:1rem;line-height:1.9;">
+              سواء كان لديك مشروع محدد أو تحتاج فقط إلى استشارة هندسية،
+              فريقنا المتخصص جاهز لمساعدتك في اتخاذ القرار الصحيح.
+            </p>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-text">
+                <h4>العنوان</h4>
+                <p>الرياض، المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div class="contact-info-text">
+                <h4>رقم الهاتف</h4>
+                <a href="tel:+966502170383">+966 502170383</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div class="contact-info-text">
+                <h4>البريد الإلكتروني العام</h4>
+                <a href="mailto:info@alshihabicc.com">info@alshihabicc.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div class="contact-info-text">
+                <h4>البريد الإلكتروني للموارد البشرية</h4>
+                <a href="mailto:hr@alshihabicc.com">hr@alshihabicc.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">⏰</div>
+              <div class="contact-info-text">
+                <h4>ساعات العمل</h4>
+                <p>الأحد – الخميس: 8:00 صباحاً – 5:00 مساءً</p>
+              </div>
+            </div>
+
+            <!-- SOCIALS -->
+            <div style="margin-top:30px;">
+              <h4 style="color:var(--dark);margin-bottom:15px;font-size:0.95rem;">تابعنا على</h4>
+              <div style="display:flex;gap:10px;">
+                <a href="#" style="width:42px;height:42px;background:var(--gray-light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:var(--transition);" onmouseover="this.style.background='#0077b5';this.style.color='white'" onmouseout="this.style.background='var(--gray-light)';this.style.color='inherit'">in</a>
+                <a href="#" style="width:42px;height:42px;background:var(--gray-light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:var(--transition);" onmouseover="this.style.background='#1da1f2';this.style.color='white'" onmouseout="this.style.background='var(--gray-light)';this.style.color='inherit'">tw</a>
+                <a href="#" style="width:42px;height:42px;background:var(--gray-light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:var(--transition);" onmouseover="this.style.background='#1877f2';this.style.color='white'" onmouseout="this.style.background='var(--gray-light)';this.style.color='inherit'">fb</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: CONTACT FORM -->
+        <div class="fade-in fade-in-delay-1">
+          <div class="contact-form">
+            <h2>اطلب عرض سعر أو استشارة</h2>
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>الاسم الكامل *</label>
+                  <input type="text" placeholder="اسمك الكامل" required>
+                </div>
+                <div class="form-group">
+                  <label>الشركة / الجهة</label>
+                  <input type="text" placeholder="اسم شركتك أو جهتك">
+                </div>
+                <div class="form-group">
+                  <label>البريد الإلكتروني *</label>
+                  <input type="email" placeholder="بريدك الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                  <label>رقم الجوال *</label>
+                  <input type="tel" placeholder="+966 5X XXX XXXX" required>
+                </div>
+                <div class="form-group full">
+                  <label>نوع الخدمة المطلوبة</label>
+                  <select>
+                    <option value="">اختر الخدمة...</option>
+                    <option>تطوير البنية التحتية</option>
+                    <option>الإنشاءات المدنية</option>
+                    <option>المياه والصرف الصحي</option>
+                    <option>الطاقة الشمسية والمتجددة</option>
+                    <option>الكهرباء والاتصالات</option>
+                    <option>شبكات المياه والري</option>
+                    <option>اللوجستيات والتوريد</option>
+                    <option>استشارة هندسية</option>
+                    <option>أخرى</option>
+                  </select>
+                </div>
+                <div class="form-group full">
+                  <label>موقع المشروع</label>
+                  <input type="text" placeholder="مدينة أو منطقة المشروع">
+                </div>
+                <div class="form-group full">
+                  <label>تفاصيل المشروع / الرسالة *</label>
+                  <textarea placeholder="اكتب نبذة عن مشروعك: النوع، الحجم التقريبي، الجدول الزمني، وأي متطلبات خاصة..." rows="5" required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:10px;">
+                أرسل طلبك الآن ←
+              </button>
+              <p style="color:var(--gray);font-size:0.82rem;text-align:center;margin-top:12px;">
+                سيتواصل معك فريقنا خلال 24 ساعة عمل
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAP PLACEHOLDER -->
+      <div class="map-container fade-in">
+        <div class="map-placeholder-icon">🗺️</div>
+        <p class="map-placeholder-text">الرياض، المملكة العربية السعودية</p>
+        <a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank" class="map-placeholder-link">
+          افتح الموقع في خرائط Google ←
+        </a>
+        <!-- يمكنك استبدال هذا بـ iframe من Google Maps: -->
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="الشهاب">
+          <p>شركة الشهاب العالمية للمقاولات — شريكك الموثوق في مشاريع البنية التحتية والإنشاءات منذ 2012.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">fb</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">روابط سريعة</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">من نحن</a>
+            <a href="services.html" class="footer-link">خدماتنا</a>
+            <a href="projects.html" class="footer-link">مشاريعنا</a>
+            <a href="hse.html" class="footer-link">الجودة والسلامة</a>
+            <a href="careers.html" class="footer-link">التوظيف</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">خدماتنا</h4>
+          <div class="footer-links">
+            <a href="services.html#infrastructure" class="footer-link">البنية التحتية</a>
+            <a href="services.html#water" class="footer-link">المياه والصرف الصحي</a>
+            <a href="services.html#solar" class="footer-link">الطاقة الشمسية</a>
+            <a href="services.html#electrical" class="footer-link">الكهرباء والاتصالات</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">تواصل معنا</h4>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>الرياض، المملكة العربية السعودية</span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><span><a href="tel:+966502170383" style="color:rgba(255,255,255,0.7)">+966 502170383</a></span></div>
+          <div class="footer-contact-item"><span class="icon">📧</span><span><a href="mailto:info@alshihabicc.com" style="color:rgba(255,255,255,0.7)">info@alshihabicc.com</a></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+        <span>© 2025 الشهاب العالمية للمقاولات. جميع الحقوق محفوظة.</span>
+        <span>ALSHEHAB INTERNATIONAL CONTRACTING</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
