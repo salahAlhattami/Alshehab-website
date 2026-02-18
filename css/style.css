@@ -407,6 +407,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   display: flex;
   align-items: center;
   overflow: hidden;
+   padding-bottom: 120px;
 }
 
 .hero-bg {
@@ -540,16 +541,17 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 .stat-item:last-child { border-left: none; }
 
 .stat-number {
-  font-size: 2.2rem;
+.stat-number {
+  font-size: 1.8rem;     /* كان 2.2rem */
   font-weight: 900;
   color: var(--white);
   line-height: 1;
-  margin-bottom: 5px;
+  margin-bottom: 3px;    /* كان 5px */
 }
 
 .stat-label {
   color: rgba(255,255,255,0.85);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 500;
 }
 
