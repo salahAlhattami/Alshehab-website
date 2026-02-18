@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مشاريع شركة الشهاب العالمية للمقاولات في البنية التحتية، المياه، الطاقة الشمسية، والإنشاءات بالمملكة العربية السعودية.">
+  <title>مشاريعنا | الشهاب العالمية للمقاولات</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .project-card[data-sector] { transition: opacity 0.3s ease, transform 0.3s ease; }
+    .case-study-banner {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 50px;
+      border-radius: var(--radius-lg);
+      margin-top: 60px;
+      text-align: center;
+    }
+    .case-study-banner h3 { font-size: 1.6rem; margin-bottom: 12px; }
+    .case-study-banner p { opacity: 0.9; margin-bottom: 25px; font-size: 1.05rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="الشهاب العالمية للمقاولات"></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li><a href="about.html" class="nav-link">من نحن</a></li>
+          <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+          <li><a href="projects.html" class="nav-link active">مشاريعنا</a></li>
+          <li><a href="hse.html" class="nav-link">الجودة والسلامة</a></li>
+          <li><a href="vision2030.html" class="nav-link">رؤية 2030</a></li>
+          <li><a href="news.html" class="nav-link">الأخبار</a></li>
+          <li><a href="careers.html" class="nav-link">التوظيف</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav-cta">تواصل معنا</a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+    <a href="about.html" class="mobile-nav-link">من نحن</a>
+    <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+    <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+    <a href="hse.html" class="mobile-nav-link">الجودة والسلامة</a>
+    <a href="vision2030.html" class="mobile-nav-link">رؤية 2030</a>
+    <a href="careers.html" class="mobile-nav-link">التوظيف</a>
+    <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+    <br>
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">اطلب عرض سعر</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">الرئيسية</a><span>/</span><span>مشاريعنا</span>
+      </div>
+      <h1>أعمالنا تتحدث عنّا</h1>
+      <p>مشاريع منجزة بمعايير عالمية في مختلف قطاعات البنية التحتية والإنشاءات</p>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div style="background:var(--primary);padding:35px 0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;">
+        <div style="color:white;"><span style="font-size:2.2rem;font-weight:900;display:block;"><span data-count="50" data-suffix="+">0+</span></span><span style="font-size:0.9rem;opacity:0.9;">مشروع منجز</span></div>
+        <div style="color:white;"><span style="font-size:2.2rem;font-weight:900;display:block;"><span data-count="6">0</span></span><span style="font-size:0.9rem;opacity:0.9;">قطاعات عمل</span></div>
+        <div style="color:white;"><span style="font-size:2.2rem;font-weight:900;display:block;"><span data-count="12" data-suffix="+">0+</span></span><span style="font-size:0.9rem;opacity:0.9;">سنة خبرة</span></div>
+        <div style="color:white;"><span style="font-size:2.2rem;font-weight:900;display:block;"><span data-count="100" data-suffix="%">0%</span></span><span style="font-size:0.9rem;opacity:0.9;">رضا العملاء</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS SECTION -->
+  <section>
+    <div class="container">
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="infrastructure">البنية التحتية</button>
+        <button class="filter-btn" data-filter="water">المياه والصرف الصحي</button>
+        <button class="filter-btn" data-filter="solar">الطاقة الشمسية</button>
+        <button class="filter-btn" data-filter="buildings">المباني والإنشاءات</button>
+        <button class="filter-btn" data-filter="electrical">الكهرباء والاتصالات</button>
+        <button class="filter-btn" data-filter="logistics">اللوجستيات</button>
+      </div>
+
+      <!-- PROJECTS GRID -->
+      <div class="projects-masonry">
+
+        <div class="project-card fade-in" data-sector="water">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#1a3a5c,#2a5a8c);">💧</div>
+            <span class="project-tag">المياه والصرف الصحي</span>
+          </div>
+          <div class="project-info">
+            <h3>مشروع شبكة الصرف الصحي — منطقة الرياض</h3>
+            <div class="project-meta">
+              <span>📍 الرياض</span>
+              <span>📅 2023</span>
+              <span>🏛️ جهة حكومية</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تصميم وتنفيذ شبكة صرف صحي متكاملة بطول إجمالي يتجاوز 15 كيلومتراً، مع محطة ضخ رئيسية وفق أعلى المعايير البيئية.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in fade-in-delay-1" data-sector="infrastructure">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#2a2a2a,#4a4a4a);">🛣️</div>
+            <span class="project-tag">البنية التحتية</span>
+          </div>
+          <div class="project-info">
+            <h3>تطوير طريق رابط — المنطقة الوسطى</h3>
+            <div class="project-meta">
+              <span>📍 المنطقة الوسطى</span>
+              <span>📅 2022</span>
+              <span>🏛️ وزارة النقل</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تنفيذ طريق رابط بمواصفات دولية بطول 8 كيلومترات، يشمل الأرصفة والإنارة وعلامات المرور.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in fade-in-delay-2" data-sector="solar">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#3a2a00,#6a5000);">☀️</div>
+            <span class="project-tag">الطاقة الشمسية</span>
+          </div>
+          <div class="project-info">
+            <h3>محطة طاقة شمسية — وحدة صناعية كبرى</h3>
+            <div class="project-meta">
+              <span>📍 الرياض</span>
+              <span>📅 2024</span>
+              <span>🏢 قطاع خاص</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تصميم وتركيب منظومة طاقة شمسية بقدرة 500 كيلوواط لتلبية احتياجات مصنع صناعي، مع توفير 40% من تكاليف الطاقة.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" data-sector="electrical">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#1a1a3a,#2a2a5a);">⚡</div>
+            <span class="project-tag">الكهرباء والاتصالات</span>
+          </div>
+          <div class="project-info">
+            <h3>تمديدات كهربائية — مجمع سكني متكامل</h3>
+            <div class="project-meta">
+              <span>📍 الرياض</span>
+              <span>📅 2023</span>
+              <span>🏢 مطوّر عقاري</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تنفيذ كامل أعمال التمديدات الكهربائية وشبكات الاتصالات لمجمع سكني يضم أكثر من 200 وحدة سكنية.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in fade-in-delay-1" data-sector="buildings">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#1a2a1a,#2a4a2a);">🏛️</div>
+            <span class="project-tag">المباني والإنشاءات</span>
+          </div>
+          <div class="project-info">
+            <h3>إعادة تأهيل مبنى حكومي — الرياض</h3>
+            <div class="project-meta">
+              <span>📍 الرياض</span>
+              <span>📅 2022</span>
+              <span>🏛️ جهة حكومية</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              إعادة تأهيل شاملة لمبنى حكومي تاريخي يشمل التشطيبات الداخلية والخارجية وتحديث الأنظمة الكهربائية والصحية.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in fade-in-delay-2" data-sector="water">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#003a3a,#005a5a);">🌊</div>
+            <span class="project-tag">شبكات الري</span>
+          </div>
+          <div class="project-info">
+            <h3>شبكة ري ذكية — مشروع زراعي</h3>
+            <div class="project-meta">
+              <span>📍 المنطقة الوسطى</span>
+              <span>📅 2023</span>
+              <span>🏢 قطاع خاص</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تصميم وتنفيذ شبكة ري ذكية موفرة للمياه تغطي مساحة 500 هكتار مع أنظمة تحكم تلقائي متطورة.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" data-sector="logistics">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#2a1a00,#4a3a00);">🚛</div>
+            <span class="project-tag">اللوجستيات والتوريد</span>
+          </div>
+          <div class="project-info">
+            <h3>إدارة سلسلة إمداد — مشروع نفط وغاز</h3>
+            <div class="project-meta">
+              <span>📍 المنطقة الشرقية</span>
+              <span>📅 2024</span>
+              <span>🏢 شركة طاقة</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              إدارة متكاملة لسلسلة الإمداد والنقل الثقيل لمشروع بنية تحتية كبير في قطاع النفط والغاز لمدة 18 شهراً.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in fade-in-delay-1" data-sector="infrastructure">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#3a1a1a,#5a2a2a);">🏗️</div>
+            <span class="project-tag">البنية التحتية</span>
+          </div>
+          <div class="project-info">
+            <h3>تطوير منطقة صناعية — المرافق والخدمات</h3>
+            <div class="project-meta">
+              <span>📍 الرياض</span>
+              <span>📅 2021</span>
+              <span>🏛️ هيئة حكومية</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تطوير شامل لبنية تحتية منطقة صناعية يشمل الطرق الداخلية وشبكات المياه والصرف الصحي والكهرباء.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in fade-in-delay-2" data-sector="solar">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background:linear-gradient(135deg,#2a3a00,#4a6a00);">🌿</div>
+            <span class="project-tag">الطاقة الشمسية</span>
+          </div>
+          <div class="project-info">
+            <h3>نظام طاقة شمسية — مجمع تعليمي</h3>
+            <div class="project-meta">
+              <span>📍 الرياض</span>
+              <span>📅 2024</span>
+              <span>🏛️ وزارة التعليم</span>
+            </div>
+            <p style="color:var(--gray);font-size:0.9rem;margin-bottom:15px;line-height:1.7;">
+              تركيب منظومة طاقة شمسية متكاملة لمجمع تعليمي يضم 5 مبانٍ، ضمن مبادرات الاستدامة في رؤية 2030.
+            </p>
+            <a href="contact.html" class="btn btn-outline-dark btn-sm">استفسر عن هذا المشروع</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CASE STUDY BANNER -->
+      <div class="case-study-banner fade-in">
+        <h3>هل تريد معرفة تفاصيل أعمق عن مشاريعنا؟</h3>
+        <p>فريقنا مستعد لتقديم دراسات حالة مفصّلة (Case Studies) لأي مشروع يهمّك</p>
+        <a href="contact.html" class="btn btn-outline btn-lg">طلب دراسة حالة مفصّلة ←</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>لديك مشروع مشابه؟ نحن جاهزون.</h2>
+          <p>استشارة مجانية مع فريقنا الهندسي المتخصص</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">اطلب عرض سعر</a>
+          <a href="services.html" class="btn btn-outline btn-lg">استعرض خدماتنا</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="الشهاب">
+          <p>شركة الشهاب العالمية للمقاولات — شريكك الموثوق في مشاريع البنية التحتية والإنشاءات منذ 2012.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">fb</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">روابط سريعة</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">من نحن</a>
+            <a href="services.html" class="footer-link">خدماتنا</a>
+            <a href="projects.html" class="footer-link">مشاريعنا</a>
+            <a href="hse.html" class="footer-link">الجودة والسلامة</a>
+            <a href="careers.html" class="footer-link">التوظيف</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">قطاعاتنا</h4>
+          <div class="footer-links">
+            <a href="services.html#infrastructure" class="footer-link">البنية التحتية</a>
+            <a href="services.html#water" class="footer-link">المياه والصرف الصحي</a>
+            <a href="services.html#solar" class="footer-link">الطاقة الشمسية</a>
+            <a href="services.html#electrical" class="footer-link">الكهرباء والاتصالات</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">تواصل معنا</h4>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>الرياض، المملكة العربية السعودية</span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><span><a href="tel:+966502170383" style="color:rgba(255,255,255,0.7)">+966 502170383</a></span></div>
+          <div class="footer-contact-item"><span class="icon">📧</span><span><a href="mailto:info@alshihabicc.com" style="color:rgba(255,255,255,0.7)">info@alshihabicc.com</a></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+        <span>© 2025 الشهاب العالمية للمقاولات. جميع الحقوق محفوظة.</span>
+        <span>ALSHEHAB INTERNATIONAL CONTRACTING</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
