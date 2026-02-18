@@ -401,13 +401,16 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 /* ============================================
    HERO SECTION
    ============================================ */
+/* ============================================
+   HERO SECTION — CLEAN VERSION
+   ============================================ */
 .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-   padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .hero-bg {
@@ -486,11 +489,12 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .hero-scroll {
   position: absolute;
-  bottom: 40px;
+  bottom: 115px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -515,7 +519,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   50% { transform: translateX(-50%) translateY(-8px); }
 }
 
-/* Hero Stats */
+/* Hero Stats Bar */
 .hero-stats {
   position: absolute;
   bottom: 0;
@@ -523,7 +527,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   left: 0;
   z-index: 3;
   background: linear-gradient(to left, var(--primary) 0%, var(--primary-dark) 100%);
-  padding: 15px 0;
+  padding: 18px 0;
 }
 
 .hero-stats .container {
@@ -534,24 +538,29 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 
 .stat-item {
   text-align: center;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 .stat-item:last-child { border-left: none; }
 
 .stat-number {
-.stat-number {
-  font-size: 1.8rem;     /* كان 2.2rem */
+  font-size: 2rem;
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
   line-height: 1;
-  margin-bottom: 3px;    /* كان 5px */
+  margin-bottom: 4px;
+}
+
+.stat-number span {
+  color: #FFFFFF !important;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .stat-label {
-  color: rgba(255,255,255,0.85);
-  font-size: 0.82rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
