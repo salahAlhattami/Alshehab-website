@@ -1902,15 +1902,17 @@ footer {
 .service-photo-card {
   position: relative;
   height: 280px;
-  border-radius: var(--radius-lg);
+  width: 100%;           /* ← أضف هذا */
+  min-width: 0;          /* ← أضف هذا */
+  border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* fallback gradient إذا لم تتوفر الصورة */
   background-color: #2a2a2a;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  direction: rtl;        /* ← أضف هذا لإعادة اتجاه النص */
 }
 
 .service-photo-card:hover {
