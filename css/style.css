@@ -1887,38 +1887,116 @@ footer {
   .hero-stats .container { grid-template-columns: repeat(2, 1fr); }
   .careers-benefits { grid-template-columns: 1fr; }
 }
-/* ============================================
-   SERVICES PHOTO GRID
-   ============================================ */
-.services-photo-grid {
+.services-photo-grid-outer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 0;
   margin-top: 50px;
-  direction: ltr;        /* ← أضف هذا */
-  width: 100%;           /* ← أضف هذا */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.service-photo-card {
+.spg-card {
   position: relative;
-  height: 280px;
-  width: 100%;           /* ← أضف هذا */
-  min-width: 0;          /* ← أضف هذا */
-  border-radius: 16px;
-  overflow: hidden;
-  cursor: pointer;
+  height: 300px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-color: #2a2a2a;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  direction: rtl;        /* ← أضف هذا لإعادة اتجاه النص */
+  background-color: #1a2a3a;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.service-photo-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+.spg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.88) 0%,
+    rgba(0,0,0,0.3) 100%
+  );
+  transition: background 0.35s ease;
 }
+
+.spg-card:hover .spg-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(232,90,27,0.92) 0%,
+    rgba(0,0,0,0.2) 100%
+  );
+}
+
+.spg-body {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 2;
+  transition: transform 0.35s ease;
+}
+
+.spg-card:hover .spg-body {
+  transform: translateY(-6px);
+}
+
+.spg-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.spg-body h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.spg-body p {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.spg-card:hover .spg-body p {
+  opacity: 1;
+  max-height: 50px;
+}
+
+.spg-body a {
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: underline;
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(6px);
+  transition: all 0.3s ease;
+}
+
+.spg-card:hover .spg-body a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .services-photo-grid-outer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .spg-card { height: 260px; }
+}
+
+@media (max-width: 600px) {
+  .services-photo-grid-outer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .spg-card { height: 200px; }
+
 
 /* Overlay داكن دائم */
 .service-photo-overlay {
